@@ -12,7 +12,7 @@ git checkout branch-name
 
 ---------------------------------------
 
-git pull --rebase origin main (Al empezar a trabajar)
+git pull origin main (Al empezar a trabajar)
 
 git add .
 
