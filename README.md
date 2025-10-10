@@ -12,9 +12,7 @@ git checkout branch-name
 
 ---------------------------------------
 
-git pull origin branch-name (Cada que vayan a empezar a trabajar)
-
----------------------------------------
+git pull origin branch-name (Cada que vayan a realizar un push)
 
 git add .
 
