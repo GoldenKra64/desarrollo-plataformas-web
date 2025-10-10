@@ -8,7 +8,11 @@ git remote -v
 
 git branch -a
 
-git checkout "branch-name"
+git checkout branch-name
+
+---------------------------------------
+
+git pull origin branch-name (Cada que vayan a empezar a trabajar)
 
 ---------------------------------------
 
@@ -16,7 +20,7 @@ git add .
 
 git commit -m "commit"
 
-git push origin "branch-name"
+git push origin branch-name
 
 ---------------------------------------
 
