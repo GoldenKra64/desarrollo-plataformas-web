@@ -1,4 +1,4 @@
-git clone https://github.com/GoldenKra64/desarrollo-plataformas-web.git
+git clone https://github.com/GoldenKra64/desarrollo-plataformas-web.git\n
 cd desarrollo-plataformas-web
 
 git remote -v
