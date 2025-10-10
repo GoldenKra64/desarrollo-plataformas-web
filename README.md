@@ -12,11 +12,11 @@ git checkout branch-name
 
 ---------------------------------------
 
-git pull origin branch-name (Cada que vayan a realizar un push)
-
 git add .
 
 git commit -m "commit"
+
+git pull --rebase origin branch-name (Cada que vayan a realizar un push)
 
 git push origin branch-name
 
