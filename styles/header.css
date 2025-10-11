@@ -1,8 +1,5 @@
 .header {
     background-color: #F2FFEC;
-    margin: 0px;
-    top: 0px;
-    left: 0px;
     flex: auto;
     display: flex;
     gap: 20px;
@@ -11,15 +8,15 @@
 }
 
 .header_logo {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     margin: 10px;
 }
 
 .header_enterprise_name {
     margin: 0px;
     padding: 0px;
-    font-size: 24px;
+    font-size: 15px;
     font-weight: bold;
     color: #333;
 }
@@ -27,23 +24,43 @@
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
+    gap: 50px;
     padding-right: 20px;
+}
+
+.header_options li {
+    justify-content: center;
+    align-items: center;
 }
 
 .header_options li a {
     font-size: 18px;
     font-weight: bold;
-    color: #888;
+    position: relative;
+    color: rgb(82, 45, 0);
     text-decoration: none;
 }
 
+.header_options li a::before {
+    content: "";
+    position: absolute;
+    background-color: orange;
+    transform: translate(-10px, 20px);
+    width: 0px;
+    height: 2px;
+}
+
+.header_options li a:hover::before {
+    width: calc(100% + 20px);
+    transition: 300ms;
+}
+
 .header_options li a:hover {
-    color: #000;
+    color: orange;
     cursor: pointer;
     transition: 200ms;
 }
+
 
 .header_enterprise_info {
     display: flex;
