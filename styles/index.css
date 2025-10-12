@@ -132,7 +132,8 @@
 
 .direction-container {
     display: flex;
-    gap: 20px;;
+    gap: 20px;
+    align-items: center;
 }
 
 .direction-slideshow .direction-container:nth-child(odd) {
