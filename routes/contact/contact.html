@@ -1,12 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactanos</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Formulario de contacto</title>
+    <style>
+        :root{
+            --bg:#ffffff;
+            --ink:#111;
+            --muted:#666;
+            --border:#d9d9d9;
+            --shadow:0 6px 18px rgba(0,0,0,.06);
+            --radius:14px;
+        }
+        *{box-sizing:border-box}
+        body{
+            margin:0;
+            min-height:100dvh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            background:#f4f6f8;
+            color:var(--ink);
+            font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;
+            padding:40px 16px;
+        }
+        .card{
+            width:min(780px, 100%);
+            background:var(--bg);
+            border:1px solid var(--border);
+            border-radius:var(--radius);
+            padding:26px;
+            box-shadow:var(--shadow);
+        }
+        h1{
+            margin:0 0 18px 0;
+            font-size:22px;
+            font-weight:700;
+            text-transform:lowercase;
+        }
+        .group{margin-bottom:14px}
+        input, textarea, select, button{
+            width:100%;
+            border:1px solid var(--border);
+            border-radius:10px;
+            padding:13px 14px;
+            font-size:15px;
+            outline:none;
+            transition:border-color .15s ease;
+            background:#fff;
+        }
+        textarea{min-height:120px; resize:vertical}
+        input::placeholder, textarea::placeholder{color:#9aa0a6}
+        input:focus, textarea:focus, select:focus{
+            border-color:#9a9a9a;
+        }
+        .section-title{
+            margin:14px 0 10px 0;
+            font-size:18px;
+            font-weight:700;
+            text-transform:lowercase;
+        }
+        button{
+            margin-top:10px;
+            border:none;
+            background:#000;
+            color:#fff;
+            font-weight:600;
+            cursor:pointer;
+            padding:12px;
+            border-radius:10px;
+        }
+        button:active{transform:translateY(1px)}
+        .msg{
+            text-align:center;
+            margin-top:10px;
+            color:green;
+            font-weight:600;
+            display:none;
+        }
+    </style>
 </head>
 <body>
-    <h1>Contactanos</h1>
-    <a href="/index.html">Volver al inicio</a>
+<main class="card">
+    <h1>formulario de contacto</h1>
+    <form id="contactForm">
+        <div class="group">
+            <input type="text" name="name" placeholder="Enter your Name" required />
+        </div>
+
+        <div class="group">
+            <input type="email" name="email" placeholder="Enter a valid email address" required />
+        </div>
+
+        <div class="group">
+            <textarea name="message" placeholder="Enter your message" required></textarea>
+        </div>
+
+        <div class="section-title">servicios</div>
+
+        <div class="group">
+            <select name="service" required>
+                <option selected disabled>Selecciona un servicio</option>
+                <option>Educación nutricional</option>
+                <option>Menús personalizados</option>
+                <option>Grupos etáreos</option>
+                <option>Alimentación avanzada para deportistas</option>
+            </select>
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <div class="msg" id="successMsg">Formulario enviado correctamente ✅</div>
+</main>
+
+<script>
+    const form = document.getElementById('contactForm');
+    const msg = document.getElementById('successMsg');
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault(); // evita recargar la página
+
+        // limpiar solo los campos del formulario
+        form.querySelectorAll('input, textarea, select').forEach(el => {
+            if (el.tagName === 'SELECT') el.selectedIndex = 0;
+            else el.value = '';
+        });
+
+        // mostrar mensaje sin borrar la interfaz
+        msg.style.display = 'block';
+        setTimeout(() => msg.style.display = 'none', 2500); // se oculta luego de 2.5s
+    });
+</script>
 </body>
 </html>
