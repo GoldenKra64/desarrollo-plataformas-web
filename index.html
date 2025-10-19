@@ -1,124 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/styles.css"/>
-    <link rel="stylesheet" href="/styles/header.css"/>
-    <link rel="stylesheet" href="/styles/index.css"/>
-    <link rel="stylesheet" href="/styles/footer.css"/>
-    <title>Supernutris</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Supernutris</title>
 </head>
-<body>
-    <!--Header de la pagina-->
-    <section class="header">
-        <div class="header_enterprise_info">
-            <img src="/resources/logo.png" alt="Logo" class="header_logo"/>
-            <h3 class="header_enterprise_name">SUPERNUTRIS</h3>
-        </div>
-        <nav>
-            <ul class="header_options">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/routes/services/services.html">Servicios</a></li>
-                <li><a href="/routes/contact/contact.html">Nosotros</a></li>
-            </ul>
-        </nav>
-    </section>
+<body class="font-sans bg-[#FFFFFF]">
 
-    <section class="banner-container">
-        <img src="/resources/index/banner.jpg" alt="Banner" class="banner"/>
-        <h1>Comienza tu camino hacia una vida más saludable</h1>
-        <h2>Junto a expertos en nutrición</h2>
-        <a class="route-change-button" href="/routes/contact/contact.html">Contáctanos</a>
-    </section>
-    
-    <div class="info-title">
-        <h4>¡Empieza el día de hoy tu transformación con ayuda de tu nutricionista!</h4>
-        <h1><b>Nuestros planes nutricionales</b></h1>
+  <header class="flex items-center justify-between p-4 bg-[#F2FFEC]">
+    <div class="flex items-center space-x-4">
+      <img src="/resources/logo.png" alt="Logo" class="h-12 w-12 object-contain" />
+      <h3 class="text-xl font-bold text-gray-800">SUPERNUTRIS</h3>
     </div>
+    <nav>
+      <ul class="flex space-x-6 text-gray-700 font-medium">
+        <li><a href="/index.html" class="hover:text-orange-400">Home</a></li>
+        <li><a href="/routes/services/services.html" class="hover:text-orange-400">Servicios</a></li>
+        <li><a href="/routes/contact/contact.html" class="hover:text-orange-400">Nosotros</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="info-slideshow">
-        <article class="info-container">
-            <div class="info-item">
-                <img src="/resources/index/healthy_food.png" alt="Healthy Food" class="info-image"/>
-                <h2>Nutrición Personalizada</h2>
-                <p>Planes de alimentación adaptados a tus necesidades y objetivos</p>
-            </div>
-        </article>
-                <article class="info-container">
-            <div class="info-item">
-                <img src="/resources/index/pregnant-woman.png" alt="Healthy Food" class="info-image"/>
-                <h2>Nutrición en el embarazo</h2>
-                <p>Impulsar el desarrollo del infante en la etapa del embarazo</p>
-            </div>
-        </article>
-        <article class="info-container">
-            <div class="info-item">
-                <img src="/resources/index/vegan.png" alt="Healthy Food" class="info-image"/>
-                <h2>Nutrición para vegetarianos</h2>
-                <p>Diseño de menús equilibrados y completos, adaptados al estilo de vida vegano</p>
-            </div>
-        </article>
-                <article class="info-container">
-            <div class="info-item">
-                <img src="/resources/index/diabetes-care.png" alt="Healthy Food" class="info-image"/>
-                <h2>Nutrición para la diabetes</h2>
-                <p>Apoyar a la recesión de la diabetes mediante hábitos saludables</p>
-            </div>
-        </article>
-    </section>
-    <div class="generic-container">
-        <a class="route-change-button" style="position: relative;" href="/routes/services/services.html">Ver más servicios</a>
-    </div>
+  <section class="relative w-full h-[400px] flex justify-center items-center overflow-hidden">
+    <img src="/resources/index/banner.jpg" alt="Banner" class="w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-black opacity-40 z-[2]"></div>
+    <h1 class="absolute top-[40%] w-4/5 text-white text-[30px] text-center z-[3] mx-auto left-0 right-0 drop-shadow-[2px_2px_4px_rgba(0,0,0,1)]">
+      Comienza tu camino hacia una vida más saludable
+    </h1>
+    <h2 class="absolute top-[65%] w-4/5 text-white text-[25px] text-center z-[3] mx-auto left-0 right-0 drop-shadow-[2px_2px_4px_rgba(0,0,0,1)]">
+      Junto a expertos en nutrición
+    </h2>
+    <a href="/routes/contact/contact.html"
+       class="absolute bottom-[20px] left-1/2 -translate-x-1/2 z-[3] 
+              px-5 py-2.5 mt-5 mb-5 text-[18px] bg-orange-500 text-white rounded 
+              no-underline hover:bg-orange-600 transition duration-200">
+      Contáctanos
+    </a>
+  </section>
 
-    <hr style="background-color: green; height: 2px; width: 80%;"/>
-    <div class="info-title">
-        <h1><b>¿Quienes somos?</b></h1>
-        <h3>Nuestro direccionamiento</h3>
-    </div>
-    <section class="direction-slideshow">
-        <article class="direction-container">
-            <div class="direction-header">
-                <img src="/resources/index/team.png" width="50px" height="50px">
-                <h1>Nosotros</h1>
-                <p>Somos un emprendimiento ecuatoriano comprometido con transformar la manera en que las personas se relacionan con su alimentación. Creemos que una buena nutrición no solo es clave para tener más energía y prevenir enfermedades, sino también para alcanzar un bienestar integral que impacte de forma positiva en la vida diaria.</p>
-            </div>
-            <img src="/resources/index/us_banner.png" alt="Nosotros" style="width: 50%; height: 50%;"/>
-        </article>
-        <article class="direction-container">
-            <div class="direction-header">
-                <img src="/resources/index/vision.png" width="50px" height="50px">
-                <h1>Nuestra Visión</h1>
-                <p>Promoción de la salud para ayudar al paciente a cumplir su objetivo, independientemente de cuál sea, a través de un servicio integral y multidisciplinario.</p>
-            </div>
-            <img src="/resources/index/vision_banner.jpg" alt="Visión" style="width: 50%; height: 50%;"/>
-        </article>
-        <article class="direction-container">
-            <div class="direction-header">
-                <img src="/resources/index/objective.png" width="50px" height="50px">
-                <h1>Nuestra Misión</h1>
-                <p>Ayudar a la gente, brindar el mejor servicio y hacer que el paciente se sienta bien tratado, comprendido en su proceso y acompañado con un trato humano, realista y con resultados garantizados.</p>
-            </div>
-            <img src="/resources/index/mission_banner.jpg" alt="Misión" style="width: 50%; height: 50%;"/>
-        </article>
-    </section>
-    <div class="generic-container" style="margin-top: 20px;">
-        <a class="route-change-button" style="position: relative;" href="/routes/contact/contact.html">Contáctanos</a>
-    </div>
+  <div class="flex flex-col items-center justify-center my-6">
+    <h4 class="text-green-800 opacity-60">¡Empieza el día de hoy tu transformación con ayuda de tu nutricionista!</h4>
+    <h1 class="text-2xl font-bold text-green-800">Nuestros planes nutricionales</h1>
+  </div>
 
-    <footer class="footer">
-        <section class="footer-section">
-            <img src="/resources/logo.png" style="width:125px; height:125px"/>
-            <h1 class="footer-important">SUPERNUTRIS</h1>
-        </section>
-        <section class="footer-section">
-            <img src="/resources/location.png" alt="Ubicacion" class="footer-img"/>
-            <h1 class="footer-important">Ubicannos</h1>
-            <a class="footer-hyperlink" href="https://maps.app.goo.gl/y4ZXL5yssfoZAuLs8">Zamora Oe3-33 y Edmundo Chiriboga</a>
-        </section>
-    </footer>
-    <div class="generic-container" style="background-color: green; width: 100%; height: 30px;">
-        <h4 style="color: white;">© Todos los derechos reservados</h4>
-    </div>
+  <section class="flex justify-center items-center flex-wrap gap-6 my-8">
+    <article class="w-[250px] h-[300px] bg-[#FFEB9A] p-6 rounded-2xl flex flex-col items-center text-center hover:bg-orange-500 hover:scale-105 transition">
+      <img src="/resources/index/healthy_food.png" alt="Nutrición personalizada" class="w-10 h-10 mb-2" />
+      <h2 class="text-[25px] font-bold text-green-800 mb-2">Nutrición Personalizada</h2>
+      <p>Planes de alimentación adaptados a tus necesidades y objetivos</p>
+    </article>
+
+    <article class="w-[250px] h-[300px] bg-[#FFEB9A] p-6 rounded-2xl flex flex-col items-center text-center hover:bg-orange-500 hover:scale-105 transition">
+      <img src="/resources/index/pregnant-woman.png" alt="Embarazo" class="w-10 h-10 mb-2" />
+      <h2 class="text-[25px] font-bold text-green-800 mb-2">Nutrición en el embarazo</h2>
+      <p>Impulsar el desarrollo del infante en la etapa del embarazo</p>
+    </article>
+
+    <article class="w-[250px] h-[300px] bg-[#FFEB9A] p-6 rounded-2xl flex flex-col items-center text-center hover:bg-orange-500 hover:scale-105 transition">
+      <img src="/resources/index/vegan.png" alt="Vegetarianos" class="w-10 h-10 mb-2" />
+      <h2 class="text-[25px] font-bold text-green-800 mb-2">Nutrición para vegetarianos</h2>
+      <p>Diseño de menús equilibrados y completos, adaptados al estilo de vida vegano</p>
+    </article>
+
+    <article class="w-[250px] h-[300px] bg-[#FFEB9A] p-6 rounded-2xl flex flex-col items-center text-center hover:bg-orange-500 hover:scale-105 transition">
+      <img src="/resources/index/diabetes-care.png" alt="Diabetes" class="w-10 h-10 mb-2" />
+      <h2 class="text-[25px] font-bold text-green-800 mb-2">Nutrición para la diabetes</h2>
+      <p>Apoyar a la recesión de la diabetes mediante hábitos saludables</p>
+    </article>
+  </section>
+
+  <div class="flex justify-center my-8">
+    <a href="/routes/services/services.html"
+       class="px-5 py-2.5 text-[18px] bg-orange-500 text-white rounded 
+              no-underline hover:bg-orange-600 transition duration-200">
+      Ver más servicios
+    </a>
+  </div>
+
+  <hr class="bg-green-800 h-[2px] w-4/5 mx-auto my-10"/>
+
+  <div class="flex flex-col items-center justify-center text-green-800 opacity-80">
+    <h1 class="text-3xl font-bold">¿Quiénes somos?</h1>
+    <h3 class="text-lg">Nuestro direccionamiento</h3>
+  </div>
+
+  <section class="flex flex-col items-center justify-center gap-8 mx-8 my-10">
+    <article class="flex flex-col md:flex-row items-center gap-6 w-full max-w-5xl hover:scale-105 transition">
+      <div class="w-full md:w-1/2 bg-[#FFEB9A] p-6 rounded-2xl flex flex-col items-center text-green-800 hover:bg-orange-500 transition">
+        <img src="/resources/index/team.png" alt="Nosotros" class="w-12 h-12 mb-2" />
+        <h1 class="text-2xl font-bold mb-2">Nosotros</h1>
+        <p class="text-center">Somos un emprendimiento ecuatoriano comprometido con transformar la manera en que las personas se relacionan con su alimentación. Creemos que una buena nutrición no solo es clave para tener más energía y prevenir enfermedades, sino también para alcanzar un bienestar integral que impacte de forma positiva en la vida diaria.</p>
+      </div>
+      <img src="/resources/index/us_banner.png" alt="Nosotros" class="w-full md:w-1/2 rounded-lg" />
+    </article>
+
+    <article class="flex flex-col md:flex-row-reverse items-center gap-6 w-full max-w-5xl hover:scale-105 transition">
+      <div class="w-full md:w-1/2 bg-[#FFEB9A] p-6 rounded-2xl flex flex-col items-center text-green-800 hover:bg-orange-500 transition">
+        <img src="/resources/index/vision.png" alt="Visión" class="w-12 h-12 mb-2" />
+        <h1 class="text-2xl font-bold mb-2">Nuestra Visión</h1>
+        <p class="text-center">Promoción de la salud para ayudar al paciente a cumplir su objetivo, independientemente de cuál sea, a través de un servicio integral y multidisciplinario.</p>
+      </div>
+      <img src="/resources/index/vision_banner.jpg" alt="Visión" class="w-full md:w-1/2 rounded-lg" />
+    </article>
+
+    <article class="flex flex-col md:flex-row items-center gap-6 w-full max-w-5xl hover:scale-105 transition">
+      <div class="w-full md:w-1/2 bg-[#FFEB9A] p-6 rounded-2xl flex flex-col items-center text-green-800 hover:bg-orange-500 transition">
+        <img src="/resources/index/objective.png" alt="Misión" class="w-12 h-12 mb-2" />
+        <h1 class="text-2xl font-bold mb-2">Nuestra Misión</h1>
+        <p class="text-center">Ayudar a la gente, brindar el mejor servicio y hacer que el paciente se sienta bien tratado, comprendido en su proceso y acompañado con un trato humano, realista y con resultados garantizados.</p>
+      </div>
+      <img src="/resources/index/mission_banner.jpg" alt="Misión" class="w-full md:w-1/2 rounded-lg" />
+    </article>
+  </section>
+
+  <div class="flex justify-center my-8">
+    <a href="/routes/contact/contact.html"
+       class="px-5 py-2.5 text-[18px] bg-orange-500 text-white rounded 
+              no-underline hover:bg-orange-600 transition duration-200">
+      Contáctanos
+    </a>
+  </div>
 </body>
+
+<footer class="bg-[#F2FFEC] text-black justify-around items-center">
+    <div class="flex gap-5 justify-around items-center py-5">
+        <section class="flex flex-col items-center">
+            <img src="/resources/logo.png" alt="Logo" class="w-32 h-32 mb-2"/>
+            <h1 class="text-2xl font-bold text-green-900">SUPERNUTRIS</h1>
+        </section>
+            <section class="flex flex-col items-center text-center">
+            <img src="/resources/location.png" alt="Ubicación" class="w-8 h-8 mb-2" />
+            <h1 class="text-lg font-bold mb-1">Ubícanos</h1>
+            <a href="https://maps.app.goo.gl/y4ZXL5yssfoZAuLs8" class="text-green-900 underline">
+                Zamora Oe3-33 y Edmundo Chiriboga
+            </a>
+        </section>
+    </div>
+    <div class="bg-green-800 w-full h-[40px] flex justify-center items-center text-white">
+    © Todos los derechos reservados
+  </div>
+</footer>
 </html>
