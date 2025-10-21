@@ -1,140 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/styles.css"/>
-    <link rel="stylesheet" href="/styles/header.css"/>
-    <link rel="stylesheet" href="/styles/footer.css"/>
-    <link rel="stylesheet" href="/styles/details.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Supernutris - Detalles de servicios</title>
 </head>
-<body>
-<!--Header de la pagina-->
-    <section class="header">
-        <div class="header_enterprise_info">
-            <img src="/resources/logo.png" alt="Logo" class="header_logo"/>
-            <h3 class="header_enterprise_name">SUPERNUTRIS</h3>
+
+<body class="font-sans bg-[#FFFFFF] text-gray-800">
+<header class="flex items-center justify-between p-4 bg-[#F2FFEC]">
+    <div class="flex items-center space-x-4">
+        <img src="/resources/logo.png" alt="Logo" class="h-12 w-12 object-contain" />
+        <h3 class="text-xl font-bold text-gray-800">SUPERNUTRIS</h3>
+    </div>
+    <nav>
+        <ul class="flex space-x-6 text-gray-700 font-medium">
+            <li><a href="/index.html" class="hover:text-orange-400">Home</a></li>
+            <li><a href="/routes/services/services.html" class="hover:text-orange-400">Servicios</a></li>
+            <li><a href="/routes/contact/contact.html" class="hover:text-orange-400">Nosotros</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!--Titulo de la pagina-->
+<div class="flex flex-col items-center justify-center my-8 text-green-800">
+    <h1 class="text-3xl font-bold">Detalles de nuestros servicios</h1>
+    <h4 class="opacity-70 text-lg">Conoce nuestros planes personalizados según tus necesidades</h4>
+</div>
+
+<!--Seccion de servicios-->
+<section class="space-y-10 max-w-5xl mx-auto px-4 mb-10">
+    <!--Servicio 1-->
+    <article class="bg-[#FFEB9A] rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-6 hover:bg-orange-500 hover:scale-[1.02] transition">
+        <img src="/resources/details/nutricionista_servicio1.jpg" alt="Nutricionista Jenifer Miguez" class="w-24 md:w-36 object-contain" />
+        <div class="text-green-800">
+            <h2 class="text-2xl font-bold mb-3">Nutrición personalizada</h2>
+            <p class="mb-2">Cada persona es única, y sus necesidades nutricionales también lo son.</p>
+            <p class="mb-2">A través de un enfoque integral y basado en evidencia científica, diseñamos planes totalmente personalizados adaptados a tus objetivos, estilo de vida, preferencias y requerimientos específicos.</p>
+            <p class="mb-2">Ya sea que busques perder grasa, aumentar masa muscular, mejorar tu digestión, optimizar tu energía diaria o simplemente adoptar hábitos más saludables, elaboramos un plan realista, flexible y sostenible que se adapte a ti.</p>
+            <p class="mb-2">Brindamos seguimiento constante para garantizar resultados duraderos y bienestar a largo plazo.</p>
+            <p class="mb-2">Precio del plan: 50 $</p>
+            <p class="font-bold"> Nutricionista a cargo: Dra. Jenifer Miguez</p>
         </div>
-        <nav>
-            <ul class="header_options">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/routes/services/services.html">Servicios</a></li>
-                <li><a href="/routes/contact/contact.html">Nosotros</a></li>
-            </ul>
-        </nav>
-    </section>
-    <!--Seccion de descripcion de los servicios-->
-    <section class="info-slideshow">
-        <article class="info-container">
-            <div class="info-item">
-                <img src="/resources/details/Plan_Nutricion.png" alt="Plan Nutricion" class="info-image"/>
-                <h2>Nutrición personalizada</h2>
-                <p>Cada persona es única, y sus necesidades nutricionales también lo son.</p>
-                <p>A través de un enfoque integral y basado en evidencia científica, diseñamos planes de alimentación totalmente personalizados, adaptados a tus objetivos, estilo de vida, preferencias y requerimientos específicos.</p>
-                <p>Ya sea que busques perder grasa, aumentar masa muscular, mejorar tu digestión, optimizar tu energía diaria o simplemente adoptar hábitos más saludables, elaboramos un plan realista, flexible y sostenible que se adapte a ti.</p>
-                <p>Además, brindamos seguimiento constante para ajustar el plan conforme avanzas en tus metas, garantizando resultados duraderos y bienestar a largo plazo.</p>
-            </div>
-        </article>
-    </section>
+    </article>
 
-    <section class="info-slideshow">
-        <article class="info-container">
-            <div class="info-item">
-                <img src="/resources/details/Nutricion_embarazo.webp" alt="Nutricion embarazo" style="width: 22%"/>
-                <h2>Nutrición en el embarazo</h2>
-                <p>La alimentación durante el embarazo y los primeros 1000 días de vida es fundamental para el desarrollo saludable del bebé y el bienestar de la madre.</p>
-                <p>Nuestro servicio de nutrición prenatal y posnatal está diseñado para cubrir todos los requerimientos nutricionales durante este período crucial, fomentando un desarrollo óptimo del infante,</p>
-                <p>previniendo deficiencias nutricionales y promoviendo hábitos alimentarios saludables desde el inicio de la vida.</p>
-                <p>Además, te brindamos acompañamiento en la alimentación complementaria para el bebé, asegurando una transición adecuada y potenciando su crecimiento y desarrollo cognitivo, físico e inmunológico.</p>
-            </div>
-        </article>
-    </section>
-    
-    <section class="info-slideshow">
-        <article class="info-container">
-            <div class="info-item">
-                <img src="/resources/details/Vegetariano.png" alt="Nutricion vegetariano" style="width: 17%"/>
-                <h2> Nutrición para vegetarianos</h2>
-                <p>Optar por una alimentación vegetariana o vegana puede traer múltiples beneficios, siempre que esté correctamente planificada.</p>
-                <p>Ofrecemos planes de alimentación equilibrados, completos y personalizados, asegurando el aporte adecuado de proteínas, hierro, calcio, vitamina B12, omega-3 y otros micronutrientes esenciales.</p>
-                <p>Diseñamos menús variados, deliciosos y prácticos que se adaptan a tu estilo de vida y respetan tus valores.</p>
-                <p>Además, brindamos educación nutricional para que puedas mantener tu alimentación basada en plantas de forma saludable y sostenible, previniendo deficiencias y maximizando tu bienestar físico y mental.</p>
-            </div>
-        </article>
-    </section>
+    <!--Servicio 2-->
+    <article class="bg-[#FFEB9A] rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-6 hover:bg-orange-500 hover:scale-[1.02] transition">
+        <img src="/resources/details/nutricionista_servicio2.jpg" alt="Nutricionista Allison Changoluisa" class="w-24 md:w-40 object-contain" />
+        <div class="text-green-800">
+            <h2 class="text-2xl font-bold mb-3">Nutrición en el embarazo</h2>
+            <p class="mb-2">La alimentación durante el embarazo y los primeros 1000 días de vida es fundamental para el desarrollo saludable del bebé y el bienestar de la madre.</p>
+            <p class="mb-2">Nuestro servicio cubre todos los requerimientos nutricionales durante este período crucial, fomentando un desarrollo óptimo del infante y previniendo deficiencias nutricionales.</p>
+            <p class="mb-2">También brindamos acompañamiento en la alimentación complementaria para el bebé, asegurando una transición adecuada y potenciando su crecimiento y desarrollo integral.</p>
+            <p class="mb-2">Precio del plan: 30 $</p>
+            <p class="font-bold"> Nutricionista a cargo: Dra. Allison Changoluisa</p>
+        </div>
+    </article>
 
-    <section class="info-slideshow">
-        <article class="info-container">
-            <div class="info-item">
-                <img src="/resources/details/Nutricion_diabetes.webp" alt="Nutricion diabetes" style="width: 50%"/>
-                <h2>Nutrición para la diabetes</h2>
-                <p>La alimentación adecuada juega un papel clave en la prevención, control e incluso reversión de la diabetes tipo 2.</p>
-                <p>A través de estrategias nutricionales personalizadas, te ayudamos a estabilizar los niveles de glucosa en sangre, mejorar la sensibilidad a la insulina y reducir riesgos de complicaciones a largo plazo.</p>
-                <p>Enseñamos a elegir alimentos de bajo índice glucémico, equilibrar porciones y establecer hábitos saludables que favorezcan tu bienestar integral.</p>
-                <p>Nuestro enfoque se centra en la educación, el acompañamiento y el empoderamiento para que tomes el control de tu salud de manera sostenible.</p>
-            </div>
-        </article>
-    </section>
+    <!--Servicio 3-->
+    <article class="bg-[#FFEB9A] rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-6 hover:bg-orange-500 hover:scale-[1.02] transition">
+        <img src="/resources/details/nutricionista_servicio3.jpg" alt="Nutricionista Alejandro Rosobela" class="w-24 md:w-40 object-contain" />
+        <div class="text-green-800">
+            <h2 class="text-2xl font-bold mb-3">Nutrición para vegetarianos</h2>
+            <p class="mb-2">Ofrecemos planes equilibrados y completos para quienes siguen una alimentación vegetariana o vegana, asegurando el aporte de proteínas, hierro, calcio y otros micronutrientes esenciales.</p>
+            <p class="mb-2">Diseñamos menús variados y prácticos que se adaptan a tu estilo de vida y valores.</p>
+            <p class="mb-2">Además, brindamos educación nutricional para que puedas mantener una dieta basada en plantas de forma saludable y sostenible.</p>
+            <p class="mb-2">Precio del plan: 30 $</p>
+            <p class="font-bold"> Nutricionista a cargo: Dr. Alejandro Rosobela</p>
+        </div>
+    </article>
 
-    <section class="info-slideshow">
-        <article class="info-container">
-            <div class="info-item">
-                <img src="/resources/details/Grupos_etarios.png" alt="Nutricion grupos etarios" style="width: 15%"/>
-                <h2>Apoyo en la nutrición para grupos etarios</h2>
-                <p>Cada etapa de la vida tiene requerimientos nutricionales específicos.</p>
-                <p>Desde la infancia hasta la vejez, ofrecemos planes de alimentación adaptados a cada grupo etario, asegurando una ingesta adecuada de energía, proteínas, vitaminas y minerales esenciales.</p>
-                <p>Nuestro objetivo es favorecer el crecimiento óptimo, el desarrollo cognitivo, la salud ósea, la prevención de enfermedades crónicas y el envejecimiento saludable.</p>
-                <p>A través de estrategias prácticas y personalizadas, apoyamos tanto a niños y adolescentes en etapas de crecimiento, como a adultos mayores que buscan mantener fuerza, vitalidad y calidad de vida.</p>
-            </div>
-        </article>
-    </section>
+    <!--Servicio 4-->
+    <article class="bg-[#FFEB9A] rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-6 hover:bg-orange-500 hover:scale-[1.02] transition">
+        <img src="/resources/details/nutricionista_servicio41.webp" alt="Nutricionista Kai Fonmig" class="w-24 md:w-40 object-contain" />
+        <div class="text-green-800">
+            <h2 class="text-2xl font-bold mb-3">Nutrición para la diabetes</h2>
+            <p class="mb-2">La alimentación adecuada juega un papel clave en la prevención y control de la diabetes tipo 2.</p>
+            <p class="mb-2">Aplicamos estrategias nutricionales personalizadas para estabilizar los niveles de glucosa y mejorar la sensibilidad a la insulina.</p>
+            <p class="mb-2">Te enseñamos a elegir alimentos de bajo índice glucémico y adoptar hábitos sostenibles que favorezcan tu bienestar.</p>
+            <p class="mb-2">Precio del plan: 40 $</p>
+            <p class="font-bold"> Nutricionista a cargo: Dr. Kai Fonmig</p>
+        </div>
+    </article>
 
-    <section class="info-slideshow">
-        <article class="info-container">
-            <div class="info-item">
-                <img src="/resources/details/Deportista.png" alt="Alimentacion para deportistas" style="width: 16%"/>
-                <h2>Alimentación avanzada para deportistas</h2>
-                <p>El rendimiento deportivo no depende solo del entrenamiento: la nutrición adecuada marca la diferencia.</p>
-                <p>Diseñamos estrategias nutricionales específicas para cada disciplina, intensidad y objetivo deportivo, ya sea fuerza, resistencia, velocidad o recuperación.</p>
-                <p>Nuestros planes buscan optimizar el rendimiento físico, mejorar la recuperación muscular, prevenir lesiones y potenciar la adaptación al entrenamiento. Además, ofrecemos recomendaciones precisas sobre hidratación, timing de nutrientes y suplementación cuando sea necesario.</p>
-                <p>Ideal para deportistas amateurs y profesionales que desean llevar su rendimiento al siguiente nivel.</p>
-            </div>
-        </article>
-    </section>
+    <!--Servicio 5-->
+    <article class="bg-[#FFEB9A] rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-6 hover:bg-orange-500 hover:scale-[1.02] transition">
+        <img src="/resources/details/nutricionista_servicio5.webp" alt="Nutricionista Valentina Mazapig" class="w-24 md:w-40 object-contain" />
+        <div class="text-green-800">
+            <h2 class="text-2xl font-bold mb-3">Apoyo nutricional por grupos etarios</h2>
+            <p class="mb-2">Cada etapa de la vida tiene requerimientos específicos. Desde la infancia hasta la vejez, ofrecemos planes adaptados a cada grupo.</p>
+            <p class="mb-2">Nuestro objetivo es favorecer el crecimiento, la salud ósea y el envejecimiento saludable mediante estrategias personalizadas.</p>
+            <p class="mb-2">Precio del plan: 40 $</p>
+            <p class="font-bold">Nutricionista a cargo: Dra. Valentina Mazapig</p>
+        </div>
+    </article>
 
-    <section class="info-slideshow">
-        <article class="info-container">
-            <div class="info-item">
-                <img src="/resources/details/Eduacion_nutricional.png" alt="Educacion Nutricional" style="width: 16%"/>
-                <h2>Educación nutricional</h2>
-                <p>Creemos que la educación es la base de un cambio duradero.</p>
-                <p>Por eso, ofrecemos charlas, talleres y programas educativos diseñados para grupos, empresas, colegios o comunidades que buscan mejorar sus hábitos alimenticios y su relación con la comida.</p>
-                <p>Explicamos de forma clara, práctica y basada en evidencia científica cómo elegir alimentos saludables, interpretar etiquetas, planificar comidas balanceadas y adoptar hábitos sostenibles.</p>
-                <p>El objetivo es empoderar a las personas para que tomen decisiones informadas que beneficien su salud a largo plazo.</p>
-            </div>
-        </article>
-    </section>
+    <!--Servicio 6-->
+    <article class="bg-[#FFEB9A] rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-6 hover:bg-orange-500 hover:scale-[1.02] transition">
+        <img src="/resources/details/nutricionista_servicio6.webp" alt="Nutricionista Scarlet Johanson" class="w-24 md:w-40 object-contain" />
+        <div class="text-green-800">
+            <h2 class="text-2xl font-bold mb-3">Alimentación avanzada para deportistas</h2>
+            <p class="mb-2">Diseñamos estrategias nutricionales específicas según tu disciplina, objetivo y nivel de entrenamiento.</p>
+            <p class="mb-2">Buscamos optimizar el rendimiento físico, la recuperación muscular y la prevención de lesiones.</p>
+            <p class="mb-2">Precio del plan: 50 $</p>
+            <p class="font-bold"> Nutricionista a cargo: Dra. Scarlet Johanson</p>
+        </div>
+    </article>
 
-    <!-- Botón de volver -->
-    <div class="generic-container" style="margin: 30px 0;">
-        <a class="route-change-button" href="/index.html" style="position: relative;">Volver al incio</a>
-    </div>
+    <!--Servicio 7-->
+    <article class="bg-[#FFEB9A] rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-6 hover:bg-orange-500 hover:scale-[1.02] transition">
+        <img src="/resources/details/nutricionista_servicio7.webp" alt="Nutricionista Renato Patatín" class="w-24 md:w-36 object-contain" />
+        <div class="text-green-800">
+            <h2 class="text-2xl font-bold mb-3">Educación nutricional</h2>
+            <p class="mb-2">Ofrecemos charlas, talleres y programas educativos para empresas, colegios o comunidades.</p>
+            <p class="mb-2">Explicamos cómo elegir alimentos saludables, interpretar etiquetas y planificar comidas balanceadas.</p>
+            <p class="mb-2">El objetivo es empoderarte para tomar decisiones informadas que beneficien tu salud a largo plazo.</p>
+            <p class="mb-2">Precio del plan: 60 $</p>
+            <p class="font-bold"> Nutricionista a cargo: Dra. Renato Patatín</p>
+        </div>
+    </article>
+</section>
 
-    <!--Pie de pagina a cambiar-->
-    <footer class="footer">
-        <section class="footer-section">
-            <img src="/resources/logo.png" style="width:125px; height:125px"/>
-            <h1 class="footer-important">SUPERNUTRIS</h1>
+<!--Boton de regreso-->
+<div class="flex justify-center my-8">
+    <a href="/index.html"
+       class="px-5 py-2.5 text-[18px] bg-orange-500 text-white rounded
+              no-underline hover:bg-orange-600 transition duration-200">
+        Volver al inicio
+    </a>
+</div>
+
+<!--Pie de pagina-->
+<footer class="bg-[#F2FFEC] text-black">
+    <div class="flex flex-col md:flex-row gap-6 justify-around items-center py-6">
+        <section class="flex flex-col items-center text-center">
+            <img src="/resources/logo.png" alt="Logo" class="w-28 h-28 mb-2"/>
+            <h1 class="text-2xl font-bold text-green-900">SUPERNUTRIS</h1>
         </section>
-        <section class="footer-section">
-            <img src="/resources/location.png" alt="Ubicacion" class="footer-img"/>
-            <h1 class="footer-important">Ubicannos</h1>
-            <a class="footer-hyperlink" href="https://maps.app.goo.gl/y4ZXL5yssfoZAuLs8">Zamora Oe3-33 y Edmundo Chiriboga</a>
+
+        <section class="flex flex-col items-center text-center">
+            <img src="/resources/location.png" alt="Ubicación" class="w-8 h-8 mb-2" />
+            <h1 class="text-lg font-bold mb-1">Ubícanos</h1>
+            <a href="https://maps.app.goo.gl/y4ZXL5yssfoZAuLs8" class="text-green-900 underline hover:text-green-700">
+                Zamora Oe3-33 y Edmundo Chiriboga
+            </a>
         </section>
-    </footer>
-    <div class="generic-container" style="background-color: green; width: 100%; height: 30px;">
-        <h4 style="color: white;">© Todos los derechos reservados</h4>
     </div>
+    <div class="bg-green-800 w-full h-[40px] flex justify-center items-center text-white">
+        © Todos los derechos reservados
+    </div>
+</footer>
 </body>
 </html>
